@@ -20,5 +20,9 @@ public class GameCenterAction{
 	public static final String FUNCATION_TYPE_ACTIVITY = "ACTIVITY";
 	public static final String FUNCATION_TYPE_APP = "APP";
 
+
 	public static final String FUNCATION_TYPE_TEST = "TEST";
+
+	public static final String FUNCATION_TYPE_TEST2 = "TEST2";
+
 }

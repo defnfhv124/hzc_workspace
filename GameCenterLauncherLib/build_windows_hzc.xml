@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project
+    name="ant"
+    default="build" >
+
+    <property
+        name="unsignedapk"
+        value="GameCenterLauncherPlugin_unsigned" />
+
+    <property
+        name="unzipalignapk"
+        value="GameCenterLauncherPlugin_unzipalignapk" />
+
+    <property
+        name="signedapk"
+        value="GameCenterLauncherPlugin" />
+
+    <property
+        name="base_add"
+        value="E:/MyWork/GameCenterLauncherLib/" />
+
+    <!-- <property name="install_add" value="D:\LeTv_Project\testBroadcast\" /> -->
+    <!--
+    <property
+        name="dx"
+        value="/Users/weizhilei/Documents/android-sdk-mac/android-sdk-macosx/build-tools/19.1.0/dx" />
+    -->
+
+    <property
+        name="is_proguard"
+        value="true" />
+
+    <property
+        name="srcdir"
+        value="src" />
+    <!-- 生成R文件的相对目录 -->
+
+    <property
+        name="outdir-gen"
+        value="gen" />
+
+    <property
+        name="ant-contrib.jar"
+        location="D:/apache-ant-1.9.4/lib/ant-contrib-1.0b3.jar" />
+
+    <taskdef
+        classpath="${ant-contrib.jar}"
+        resource="net/sf/antcontrib/antcontrib.properties" />
+
+    <!-- 渠道:机型:真实机型:SharedUserID -->
+    <!-- 以下为乐视渠道 -->
+
+    <property
+        name="key_letv"
+        value="20:X55AIR:X55AIR:com.letv.t2.account:x55platform.x509.pem:x55platform.pk8:letv" />
+
+    <!-- <property -->
+    <!-- name="key_letv" -->
+    <!-- value="20:X50AIR:X50AIR:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv" /> -->
+
+
+    <!-- <property -->
+    <!-- name="key_letv" -->
+    <!-- value="20:x60:x60:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv" /> -->
+
+
+    <!-- <property -->
+    <!-- name="key_letv" -->
+    <!-- value="20:X55AIR:X55AIR:com.letv.t2.account:x55platform.x509.pem:x55platform.pk8:letv" /> -->
+
+
+    <!-- <property -->
+    <!-- name="key_3rd" -->
+    <!-- value="900:10:10::::10,900:shafa:shafa::::shafa,900:360tv:360tv::::360tv,900:dangbei:dangbei::::dangbei,900:qipo:qipo::::qipo,900:aijia:aijia::::aijia,900:feishi:feishi::::feishi,900:duole:duole::::duole" /> -->
+
+
+    <!-- <property -->
+    <!-- name="key_letv" -->
+    <!-- value="20:G1:G1:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv,20:NewC1S:NewC1S:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv,20:C1:C1:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv,20:Max70:Max70:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv,20:C2:C2:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv,20:S50AIR:S50AIR:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv,20:X50AIR:X50AIR:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv,20:S40AIR:S40AIR:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv,20:x60:x60:com.letv.t2.account:t2platform.x509.pem:t2platform.pk8:letv,20:S50:S50:com.letv.t2.account:platform.x509.pem:platform.pk8:letv,20:S40:S40:com.letv.t2.account:platform.x509.pem:platform.pk8:letv,20:X55AIR:X55AIR:com.letv.t2.account:x55platform.x509.pem:x55platform.pk8:letv" /> -->
+
+    <property
+        name="key_3rd"
+        value="900:10:10::::10" />
+
+    <property
+        name="android-jar"
+        value="D:/android-sdk-windows/platforms/android-21/android.jar" />
+
+    <property
+        name="classes-jar"
+        value="E:/MyWork/GameCenterLauncherLib/classes3.0.jar" />
+
+    <property
+        name="proguard-jar"
+        value="E:/MyWork/GameCenterLauncherLib/proguard.jar" />
+    <!--
+    <property
+        name="aapt"
+        value="/Users/weizhilei/Documents/android-sdk-mac/android-sdk-macosx/build-tools/19.1.0/aapt" />
+
+    <property
+        name="aidl"
+        value="/Users/weizhilei/Documents/android-sdk-mac/android-sdk-macosx/build-tools/19.1.0/aidl" />
+    -->
+    <!-- 编译aidl文件所需的预处理框架文件framework.aidl -->
+
+    <property
+        name="framework-aidl"
+        value="D:/android-sdk-windows/platforms/android-21/framework.aidl" />
+
+    <property
+        name="versionCode"
+        value="1002" />
+
+    <property
+        name="versionName"
+        value="v1.02" />
+
+    <loadproperties srcFile="project.properties" />
+
+    <tstamp prefix="packagetime" >
+
+        <format
+            pattern="MMdd_HHmm"
+            property="time" />
+    </tstamp>
+
+    <target
+        name="build"
+        depends="compile" >
+
+        <!-- -f 强制覆盖 -->
+        <!-- -M 指定Manifest文件 -->
+        <!-- -S 指定资源目录 -->
+        <!-- -A 指定资产目录 -->
+        <!-- -I 指定引入的类库 -->
+        <!-- -F 指定要生成的包 -->
+
+        <echo>
+			正在重新打包资源文件...
+        </echo>
+
+        <exec executable="aapt" >
+
+            <arg value="package" />
+
+            <arg value="-f" />
+            <!-- 资源覆盖重写 -->
+
+            <arg value="-M" />
+
+            <arg value="AndroidManifest.xml" />
+
+            <arg value="-S" />
+
+            <arg value="res" />
+
+            <arg value="-A" />
+            <!-- 与R.java不同，需要asset目录也打包 -->
+
+            <arg value="assets" />
+
+            <arg value="-I" />
+
+            <arg value="${android-jar}" />
+
+            <arg value="-F" />
+            <!-- 输出资源压缩包 -->
+
+            <arg value="${base_add}/build/${unsignedapk}.zip" />
+
+            <arg value="--auto-add-overlay" />
+        </exec>
+
+        <java
+            classname="com.android.sdklib.build.ApkBuilderMain"
+            classpath="D:/android-sdk-windows/tools/lib/sdklib.jar" >
+
+            <arg value="${base_add}/build/${unsignedapk}.apk" />
+
+            <arg value="-v" />
+
+            <arg value="-u" />
+
+            <arg value="-z" />
+
+            <arg value="${base_add}/build/${unsignedapk}.zip" />
+
+            <arg value="-f" />
+
+            <arg value="${base_add}/classes.dex" />
+
+            <arg value="-nf" />
+
+            <arg value="${base_add}/libs" />
+        </java>
+
+        <!-- 签名 -->
+
+        <exec
+            executable="jarsigner"
+            failonerror="true" >
+
+            <arg value="-verbose" />
+
+            <arg value="-storepass" />
+
+            <arg value="tvos123" />
+
+            <arg value="-digestalg" />
+
+            <arg value="SHA1" />
+
+            <arg value="-sigalg" />
+
+            <arg value="MD5withRSA" />
+
+            <arg value="-keypass" />
+
+            <arg value="tvos123" />
+
+            <arg value="-keystore" />
+
+            <arg value="tvos.key" />
+
+            <arg value="-signedjar" />
+
+            <arg value="${base_add}/build/${unzipalignapk}.apk" />
+
+            <arg value="${base_add}/build/${unsignedapk}.apk" />
+
+            <arg value="tvos" />
+        </exec>
+
+        <!-- zipalign 进行4K对齐 -->
+
+        <exec
+            executable="zipalign"
+            failonerror="true" >
+
+            <arg value="-v" />
+
+            <arg value="4" />
+
+            <arg value="${base_add}/build/${unzipalignapk}.apk" />
+
+            <arg value="${base_add}/out/${signedapk}_${versionName}.apk" />
+        </exec>
+    </target>
+    <!-- 步骤2，编译 -->
+
+    <target
+        name="compile"
+        depends="init" >
+
+        <!-- -f 强制覆盖已存在的文件。 -->
+        <!-- -m 在-J指定的位置下自动生成相应的包的目录。 -->
+        <!-- -J 指定R.java文件生成的目录。 -->
+        <!-- -S 指定资源目录。 -->
+        <!-- -M 指定清单文件。 -->
+        <!-- -I 引入类库 -->
+
+        <echo>
+			generating R.java for project to dir gen (using aapt) ...
+        </echo>
+
+        <exec executable="aapt" >
+
+            <arg value="package" />
+
+            <arg value="-m" />
+
+            <arg value="-J" />
+
+            <arg value="gen" />
+
+            <arg value="-M" />
+
+            <arg value="AndroidManifest.xml" />
+
+            <arg value="-S" />
+
+            <arg value="res" />
+
+            <arg value="-I" />
+
+            <arg value="${android-jar}" />
+
+            <arg value="--auto-add-overlay" />
+        </exec>
+
+        <!-- 引用包集合 -->
+
+        <path id="project.libs" >
+
+            <fileset dir="libs" >
+
+                <include name="*.jar" />
+            </fileset>
+
+             <fileset dir="E:/MyWork/" >
+
+                <include name="classes3.0222.jar" />
+            </fileset>
+            
+             <fileset dir="E:/MyWork/GameCenterLauncherLib" >
+
+                <include name="*.jar" />
+            </fileset>
+        </path>
+
+        <!-- 生成.class文件，包含引用包 -->
+        <!-- -d <目录> 指定存放生成的类文件的位置 -->
+        <!-- -bootclasspath <路径> 覆盖引导类文件的位置 -->
+
+        <echo>
+			compiling java files to class files (include R.java, library and the third-party jars) ... 
+        </echo>
+
+        <javac
+            bootclasspath="${android-jar}"
+            destdir="bin/classes"
+            encoding="UTF-8"
+            source="1.7"
+            target="1.7" >
+
+            <src path="src" />
+
+            <src path="gen" />
+
+            <classpath refid="project.libs" />
+        </javac>
+
+        <!-- 执行代码混淆 -->
+
+        <echo>
+			开始代码混淆 
+        </echo>
+
+        <jar
+            basedir="${base_add}/bin/classes"
+            destfile="${base_add}/bin/temp.jar" />
+
+        <java
+            failonerror="true"
+            fork="true"
+            jar="${proguard-jar}" >
+
+            <jvmarg value="-Dmaximum.inlined.code.length=32" />
+
+            <arg value="-injars ${base_add}/bin/temp.jar" />
+
+            <arg value="-outjars ${base_add}/bin/optimized.jar" />
+
+            <arg value="-libraryjars ${android-jar}" />
+
+            <arg value="-libraryjars ${classes-jar}/" />
+
+            <arg value="@${base_add}/proguard_windows_hzc.cfg" />
+        </java>
+
+        <mkdir dir="${base_add}/bin/classes_proguard" />
+
+        <echo>
+			混淆完毕,解压jar包
+        </echo>
+
+        <unzip
+            dest="${base_add}/bin/classes_proguard"
+            src="${base_add}/bin/optimized.jar" />
+
+        <if>
+
+            <equals
+                arg1="false"
+                arg2="${is_proguard}" />
+
+            <then>
+
+                <echo>
+					打包不混淆的dex文件
+                </echo>
+
+                <exec executable="D:/android-sdk-windows/build-tools/22.0.0/dx.bat" >
+
+                    <arg value="--dex" />
+
+                    <arg value="--output=${base_add}/classes.dex" />
+
+                    <arg value="${base_add}/bin/classes" />
+
+                    <arg value="${base_add}/libs" />
+                </exec>
+            </then>
+
+            <else>
+
+                <echo>
+					打包混淆之后的dex文件
+                </echo>
+
+                <exec executable="D:/android-sdk-windows/build-tools/22.0.0/dx.bat" >
+
+                    <arg value="--dex" />
+
+                    <arg value="--output=${base_add}/classes.dex" />
+
+                    <arg value="${base_add}/bin/classes_proguard" />
+
+                    <arg value="${base_add}/libs" />
+
+                    <arg value="-JXmx2048M" />
+
+                    <arg value="-JXss50M" />
+                </exec>
+            </else>
+        </if>
+    </target>
+
+    <!-- 步骤1，初始化文件夹 -->
+
+    <target name="init" >
+
+        <echo>
+			start initing ... 
+        </echo>
+
+        <delete dir="out" />
+
+        <mkdir dir="out" />
+
+        <delete dir="build" />
+
+        <mkdir dir="build" />
+
+        <delete dir="gen" />
+
+        <mkdir dir="gen" />
+
+        <delete dir="bin" />
+
+        <mkdir dir="bin/classes" />
+    </target>
+
+</project>

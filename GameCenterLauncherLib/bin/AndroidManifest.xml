@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.letv.tvos.gamecenter.launcher.plugin"
+    android:versionCode="1002"
+    android:versionName="1.0.2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="widgetId"
+            android:value="9904" />
+        <meta-data
+            android:name="widgetName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="widgetActivator"
+            android:value="com.letv.tvos.gamecenter.launcher.GameCenterActivator" />
+        <meta-data
+            android:name="supportOtherDevice"
+            android:value="true" />
+        <meta-data
+            android:name="ILePluginCreateApi"
+            android:value="com.letv.tvos.gamecenter.launcher.GameCenterLauncherPlugin" />
+        <meta-data
+            android:name="dependentPackages"
+            android:value="com.stv.launcher.fragment;android.support.v4;com.stv.launcher.plugin.api;com.facebook" />
+
+    </application>
+
+</manifest>

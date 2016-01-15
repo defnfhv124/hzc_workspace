@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">游戏</string>
+    <string name="action_settings">Settings</string>
+    <string name="m_games_no_data_msg">还没有玩过游戏，快去游戏中心下载吧</string>
+
+</resources>

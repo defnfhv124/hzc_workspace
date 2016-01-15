@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gs_launcher_item_small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:background="@drawable/gamecenter_launcher_item_focus_bg"
+    android:focusable="true"
+    android:visibility="visible" >
+
+    <com.letv.tvos.gamecenter.widget.AsyncImageView
+        android:id="@+id/launcher_item_bg"
+        android:layout_width="@dimen/gs_154_6"
+        android:layout_height="@dimen/gs_126_6" />
+
+    <ImageView
+        android:id="@+id/launcher_item_icon"
+        android:layout_width="@dimen/gs_60"
+        android:layout_height="@dimen/gs_60"
+        android:layout_gravity="top|left"
+        android:src="@drawable/is_install_icon" />
+
+    <TextView
+        android:id="@+id/launcher_item_name"
+        android:layout_width="@dimen/gs_154_6"
+        android:layout_height="@dimen/gs_44"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gamecenter_launcher_item_tv_bg"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/gf_26" />
+
+</FrameLayout>

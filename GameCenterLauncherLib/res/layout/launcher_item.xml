@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gs_launcher_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gamecenter_launcher_item_focus_bg"
+    android:clipChildren="false"
+    android:focusable="true"
+     >
+
+    <com.letv.tvos.gamecenter.widget.AsyncImageView
+        android:id="@+id/launcher_item_bg"
+        android:layout_width="@dimen/gs_226"
+        android:layout_height="@dimen/gs_126_6" />
+
+    <com.letv.tvos.gamecenter.widget.AsyncImageView
+        android:id="@+id/launcher_item_app_icon"
+        android:layout_width="@dimen/gs_74"
+        android:layout_height="@dimen/gs_74"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/gs_10"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/launcher_item_icon"
+        android:layout_width="@dimen/gs_60"
+        android:layout_height="@dimen/gs_60"
+        android:background="@drawable/is_install_icon"
+        android:layout_gravity="top|left" />
+
+    <TextView
+        android:id="@+id/launcher_item_name"
+        android:layout_width="@dimen/gs_226"
+        android:layout_height="@dimen/gs_44"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/gf_26" />
+
+</FrameLayout>

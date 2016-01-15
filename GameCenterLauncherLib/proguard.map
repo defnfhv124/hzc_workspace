@@ -1,0 +1,826 @@
+com.letv.tvos.gamecenter.AppConfig -> com.letv.tvos.gamecenter.a:
+    boolean DEBUG_MODE -> a
+    boolean DEBUG_IN_SELF -> b
+    java.lang.String IMAGE_CACHE_DIR -> c
+    java.lang.String RELEASE_BUILD_ENVIRONMENT_ZH -> d
+    java.lang.String RELEASE_BUILD_ENVIRONMENT_HK -> e
+    java.lang.String RELEASE_BUILD_ENVIRONMENT_HW -> f
+    java.lang.String RELEASE_BUILD_ENVIRONMENT_DEFAULT -> g
+    java.lang.String DATAEYE_APP_ID_ZH -> h
+    java.lang.String DATAEYE_APP_ID_HK -> i
+    java.lang.String DATAEYE_APP_ID_HW -> j
+    java.lang.String DATAEYE_APP_ID_TEST -> k
+    long PAGE_DATA_OVERDUE_TIME -> l
+    long THREE_DIMENSIONAL_GAME_PROFILE_CHECKING_DELAY_TIME -> m
+    java.lang.String getDataEyeAppId() -> a
+com.letv.tvos.gamecenter.ChannelManager -> com.letv.tvos.gamecenter.b:
+    java.lang.String CHANNELMANAGER_CPID -> N
+    java.lang.String CHANNELMANAGER_MODEL -> O
+    java.lang.String CHANNELMANAGER_MODEL_EXACT -> P
+    java.lang.String CHANNEL_LETV -> a
+    java.lang.String CHANNEL_LETV_CNTV -> b
+    java.lang.String DEVICE_CHANNEL_X60 -> c
+    java.lang.String DEVICE_CHANNEL_S50 -> d
+    java.lang.String DEVICE_CHANNEL_XX60 -> e
+    java.lang.String DEVICE_CHANNEL_S40UI15 -> f
+    java.lang.String DEVICE_CHANNEL_S40UI20 -> g
+    java.lang.String DEVICE_CHANNEL_S40 -> h
+    java.lang.String DEVICE_CHANNEL_S40Air -> i
+    java.lang.String DEVICE_CHANNEL_CC1 -> j
+    java.lang.String DEVICE_CHANNEL_CC1A -> k
+    java.lang.String DEVICE_CHANNEL_CC1B -> l
+    java.lang.String DEVICE_CHANNEL_S50Air -> m
+    java.lang.String DEVICE_CHANNEL_X50Air -> n
+    java.lang.String DEVICE_CHANNEL_MAX_70 -> o
+    java.lang.String DEVICE_CHANNEL_C2 -> p
+    java.lang.String DEVICE_CHANNEL_C1 -> q
+    java.lang.String DEVICE_CHANNEL_NEWC1S -> r
+    java.lang.String DEVICE_CHANNEL_G1 -> s
+    java.lang.String DEVICE_CHANNEL_X55Air -> t
+    java.lang.String LETV_MANAGER_CHANNEL_X60 -> u
+    java.lang.String LETV_MANAGER_CHANNEL_S50 -> v
+    java.lang.String LETV_MANAGER_CHANNEL_S40 -> w
+    java.lang.String LETV_MANAGER_CHANNEL_C1 -> x
+    java.lang.String LETV_MANAGER_CHANNEL_C1S -> y
+    java.lang.String LETV_MANAGER_CHANNEL_C1A -> z
+    java.lang.String LETV_MANAGER_CHANNEL_C1B -> A
+    java.lang.String LETV_MANAGER_CHANNEL_T1S -> B
+    java.lang.String LETV_MANAGER_CHANNEL_NEWC1S -> C
+    java.lang.String LETV_MANAGER_CHANNEL_S50Air -> D
+    java.lang.String LETV_MANAGER_CHANNEL_X50Air -> E
+    java.lang.String LETV_MANAGER_CHANNEL_S40Air -> F
+    java.lang.String LETV_MANAGER_CHANNEL_MAX_70 -> G
+    java.lang.String LETV_MANAGER_CHANNEL_C2 -> H
+    java.lang.String LETV_MANAGER_CHANNEL_X55Air -> I
+    java.lang.String DEVICE_EXACT_X60 -> J
+    java.lang.String DEVICE_EXACT_S50 -> K
+    java.lang.String DEVICE_EXACT_S40UI15 -> L
+    java.lang.String DEVICE_EXACT_CC1 -> M
+    java.lang.String CPID -> Q
+    java.lang.String DEVICE_CHANNEL_NAME -> R
+    java.lang.String DEVICE_EXACT_NAME -> S
+    android.content.pm.ApplicationInfo getApplicationInfo(android.content.Context) -> b
+    java.lang.String getCpid$1afe14f3() -> a
+    java.lang.String getDeviceChannelNameWithLetvManager(android.content.Context) -> a
+    java.lang.String getLetvManagerModel() -> b
+com.letv.tvos.gamecenter.application.network.HttpRequestAsyncTask -> com.letv.tvos.gamecenter.application.network.HttpRequestAsyncTask:
+    int RESPONSE_TIME_OUT -> RESPONSE_TIME_OUT
+    int REQUEST_TIME_OUT -> REQUEST_TIME_OUT
+    java.lang.String resultString -> resultString
+    android.net.http.AndroidHttpClient httpClient -> httpClient
+    void onPreExecute() -> onPreExecute
+    org.apache.http.client.HttpClient buildHttpClient() -> buildHttpClient
+    com.letv.tvos.gamecenter.application.network.IRequest doInBackground(com.letv.tvos.gamecenter.application.network.IRequest[]) -> doInBackground
+    void onPostExecute(com.letv.tvos.gamecenter.application.network.IRequest) -> onPostExecute
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.letv.tvos.gamecenter.application.network.HttpRequestManager -> com.letv.tvos.gamecenter.application.network.HttpRequestManager:
+    java.lang.String macString -> macString
+    java.lang.String sessionIdString -> sessionIdString
+    java.lang.String channelNoString -> channelNoString
+    java.lang.String deviceChannelNameString -> deviceChannelNameString
+    java.lang.String deviceExactNameString -> deviceExactNameString
+    java.lang.String appVersionString -> appVersionString
+    java.lang.String deviceInfoString -> deviceInfoString
+    java.lang.String osVersionString -> osVersionString
+    java.lang.String timeStampString -> timeStampString
+    java.lang.String dataInfoString -> dataInfoString
+    java.lang.String imeiString -> imeiString
+    com.letv.tvos.gamecenter.application.network.HttpRequestManager httpRequestManager -> httpRequestManager
+    java.util.concurrent.ExecutorService executorService -> executorService
+    void init(android.content.Context) -> init
+    void start(com.letv.tvos.gamecenter.application.network.IRequest,com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener) -> start
+    com.letv.tvos.gamecenter.application.network.HttpRequestManager getInstance(android.content.Context) -> getInstance
+com.letv.tvos.gamecenter.application.network.IRequest -> com.letv.tvos.gamecenter.application.network.IRequest:
+    int retryNumber -> retryNumber
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod requestMethod -> requestMethod
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol requestProtocol -> requestProtocol
+    java.util.Map paramsMap -> paramsMap
+    java.lang.Object postObject -> postObject
+    java.lang.reflect.Type modelType -> modelType
+    com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener onNetworkCompleteListener -> onNetworkCompleteListener
+    java.lang.String urlString -> urlString
+    com.letv.tvos.gamecenter.application.parser.BaseParser parser -> parser
+    com.letv.tvos.gamecenter.application.network.IResponse responseObject -> responseObject
+    java.lang.Object tag -> tag
+    boolean isUseCustomRules -> isUseCustomRules
+    int httpCode -> httpCode
+    void start(android.content.Context) -> start
+    boolean isUseCustomRules() -> isUseCustomRules
+    void setUseCustomRules(boolean) -> setUseCustomRules
+    java.lang.Object getTag() -> getTag
+    void setTag(java.lang.Object) -> setTag
+    int getRetryNumber() -> getRetryNumber
+    void setRetryNumber(int) -> setRetryNumber
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod getRequestMethod() -> getRequestMethod
+    void setRequestMethod(com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod) -> setRequestMethod
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol getRequestProtocol() -> getRequestProtocol
+    void setRequestProtocol(com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol) -> setRequestProtocol
+    java.util.Map getParamsMap() -> getParamsMap
+    void setParamsMap(java.util.Map) -> setParamsMap
+    java.lang.reflect.Type getModelType() -> getModelType
+    void setModelType(java.lang.reflect.Type) -> setModelType
+    com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener getOnNetworkCompleteListener() -> getOnNetworkCompleteListener
+    com.letv.tvos.gamecenter.application.network.IRequest setOnNetworkCompleteListener(com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener) -> setOnNetworkCompleteListener
+    java.lang.String getUrlString() -> getUrlString
+    void setUrlString(java.lang.String) -> setUrlString
+    com.letv.tvos.gamecenter.application.parser.BaseParser getParser() -> getParser
+    void setParser(com.letv.tvos.gamecenter.application.parser.BaseParser) -> setParser
+    com.letv.tvos.gamecenter.application.network.IResponse getResponseObject() -> getResponseObject
+    void setResponseObject(com.letv.tvos.gamecenter.application.network.IResponse) -> setResponseObject
+    int getHttpCode() -> getHttpCode
+    void setHttpCode(int) -> setHttpCode
+    java.util.Map getCustomRuleParamsMap(java.util.Map) -> getCustomRuleParamsMap
+    java.util.Map getCommonParamsMap() -> getCommonParamsMap
+    java.lang.Object getPostObject() -> getPostObject
+    void setPostObject(java.lang.Object) -> setPostObject
+com.letv.tvos.gamecenter.application.network.IRequest$1 -> com.letv.tvos.gamecenter.application.network.IRequest$1:
+com.letv.tvos.gamecenter.application.network.IRequest$Builder -> com.letv.tvos.gamecenter.application.network.IRequest$Builder:
+    int retryNumber -> retryNumber
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod requestMethod -> requestMethod
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol requestProtocol -> requestProtocol
+    java.util.Map paramsMap -> paramsMap
+    java.lang.Object postObject -> postObject
+    java.lang.reflect.Type modelType -> modelType
+    com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener onNetworkCompleteListener -> onNetworkCompleteListener
+    java.lang.String urlString -> urlString
+    com.letv.tvos.gamecenter.application.parser.BaseParser parser -> parser
+    com.letv.tvos.gamecenter.application.network.IResponse responseObject -> responseObject
+    java.lang.Object tag -> tag
+    boolean isUseCustomRules -> isUseCustomRules
+    boolean isUseCustomRules() -> isUseCustomRules
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setUseCustomRules(boolean) -> setUseCustomRules
+    java.lang.Object getTag() -> getTag
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setTag(java.lang.Object) -> setTag
+    int getRetryNumber() -> getRetryNumber
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setRetryNumber(int) -> setRetryNumber
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod getRequestMethod() -> getRequestMethod
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setRequestMethod(com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod) -> setRequestMethod
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol getRequestProtocol() -> getRequestProtocol
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setRequestProtocol(com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol) -> setRequestProtocol
+    java.util.Map getParamsMap() -> getParamsMap
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setParamsMap(java.util.Map) -> setParamsMap
+    java.lang.reflect.Type getModelType() -> getModelType
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setModelType(java.lang.reflect.Type) -> setModelType
+    com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener getOnNetworkCompleteListener() -> getOnNetworkCompleteListener
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setOnNetworkCompleteListener(com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener) -> setOnNetworkCompleteListener
+    java.lang.String getUrlString() -> getUrlString
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setUrlString(java.lang.String) -> setUrlString
+    com.letv.tvos.gamecenter.application.parser.BaseParser getParser() -> getParser
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setParser(com.letv.tvos.gamecenter.application.parser.BaseParser) -> setParser
+    com.letv.tvos.gamecenter.application.network.IResponse getResponseObject() -> getResponseObject
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setResponseObject(com.letv.tvos.gamecenter.application.network.IResponse) -> setResponseObject
+    com.letv.tvos.gamecenter.application.network.IRequest create() -> create
+    java.lang.Object getPostObject() -> getPostObject
+    com.letv.tvos.gamecenter.application.network.IRequest$Builder setPostObject(java.lang.Object) -> setPostObject
+    int access$000(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$000
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod access$100(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$100
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol access$200(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$200
+    java.util.Map access$300(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$300
+    java.lang.Object access$400(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$400
+    java.lang.reflect.Type access$500(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$500
+    com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener access$600(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$600
+    java.lang.String access$700(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$700
+    com.letv.tvos.gamecenter.application.parser.BaseParser access$800(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$800
+    com.letv.tvos.gamecenter.application.network.IResponse access$900(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$900
+    java.lang.Object access$1000(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$1000
+    boolean access$1100(com.letv.tvos.gamecenter.application.network.IRequest$Builder) -> access$1100
+com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod -> com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod:
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod POST -> POST
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod GET -> GET
+    java.lang.String requestMethodName -> requestMethodName
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod[] $VALUES -> $VALUES
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod[] values() -> values
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestMethod valueOf(java.lang.String) -> valueOf
+    java.lang.String getRequestMethodName() -> getRequestMethodName
+com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol -> com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol:
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol HTTP -> HTTP
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol HTTPS -> HTTPS
+    java.lang.String requestProtocol -> requestProtocol
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol[] $VALUES -> $VALUES
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol[] values() -> values
+    com.letv.tvos.gamecenter.application.network.IRequest$RequestProtocol valueOf(java.lang.String) -> valueOf
+    java.lang.String requestProtocolName() -> requestProtocolName
+com.letv.tvos.gamecenter.application.network.IResponse -> com.letv.tvos.gamecenter.application.network.IResponse:
+    int STATE_CODE_NOT_INIT -> STATE_CODE_NOT_INIT
+    int STATE_CODE_SUCCESS -> STATE_CODE_SUCCESS
+    int status -> status
+    java.lang.String msg -> msg
+    java.lang.String code -> code
+    java.lang.String serverTime -> serverTime
+    java.lang.Object entity -> entity
+    java.lang.Object getEntity() -> getEntity
+    void setEntity(java.lang.Object) -> setEntity
+    int getStateCode() -> getStateCode
+    void setStateCode(int) -> setStateCode
+    java.lang.String getMsg() -> getMsg
+    void setMsg(java.lang.String) -> setMsg
+    java.lang.String getServerTime() -> getServerTime
+    void setServerTime(java.lang.String) -> setServerTime
+    java.lang.String getCode() -> getCode
+    void setCode(java.lang.String) -> setCode
+com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener -> com.letv.tvos.gamecenter.application.network.OnNetworkCompleteListener:
+    void onNetworkCompleteSuccess(com.letv.tvos.gamecenter.application.network.IRequest,java.lang.String) -> onNetworkCompleteSuccess
+    void onNetworkCompleteFailed(com.letv.tvos.gamecenter.application.network.IRequest,java.lang.String) -> onNetworkCompleteFailed
+com.letv.tvos.gamecenter.application.network.RequestMaker -> com.letv.tvos.gamecenter.application.network.RequestMaker:
+    com.letv.tvos.gamecenter.application.network.RequestMaker requestMaker -> requestMaker
+    com.letv.tvos.gamecenter.application.network.RequestMaker getInstance() -> getInstance
+    com.letv.tvos.gamecenter.application.network.IRequest getDeskTopItemsRequest() -> getDeskTopItemsRequest
+    com.letv.tvos.gamecenter.application.network.IRequest getDeskTopItems1Request() -> getDeskTopItems1Request
+com.letv.tvos.gamecenter.application.network.RequestMaker$1 -> com.letv.tvos.gamecenter.application.network.RequestMaker$1:
+    com.letv.tvos.gamecenter.application.network.RequestMaker this$0 -> this$0
+com.letv.tvos.gamecenter.application.network.RequestMaker$2 -> com.letv.tvos.gamecenter.application.network.RequestMaker$2:
+    com.letv.tvos.gamecenter.application.network.RequestMaker this$0 -> this$0
+com.letv.tvos.gamecenter.application.network.UrlSet -> com.letv.tvos.gamecenter.application.network.UrlSet:
+    java.lang.String URL_919_EVENT_SERVER -> URL_919_EVENT_SERVER
+    java.lang.String URL_919_EVENT_SERVER_TEST -> URL_919_EVENT_SERVER_TEST
+    java.lang.String URL_BASIC_SERVICE_ZH -> URL_BASIC_SERVICE_ZH
+    java.lang.String URL_BASIC_SERVICE_HK -> URL_BASIC_SERVICE_HK
+    java.lang.String URL_BASIC_SERVICE_HW -> URL_BASIC_SERVICE_HW
+    java.lang.String URL_BASIC_SERVICE_TEST -> URL_BASIC_SERVICE_TEST
+    java.lang.String PUSH_SERVER_URL_ZH -> PUSH_SERVER_URL_ZH
+    java.lang.String PUSH_SERVER_URL_HW -> PUSH_SERVER_URL_HW
+    java.lang.String URL_DESKTOP_ITEMS -> URL_DESKTOP_ITEMS
+    java.lang.String URL_DESKTOP_ITEMS1 -> URL_DESKTOP_ITEMS1
+    java.lang.String getBasicServiceUrl() -> getBasicServiceUrl
+com.letv.tvos.gamecenter.application.parser.BaseParser -> com.letv.tvos.gamecenter.application.parser.BaseParser:
+    com.letv.tvos.gamecenter.application.network.IResponse parse(java.lang.String) -> parse
+com.letv.tvos.gamecenter.data.spfs.SharedPrefHelper -> com.letv.tvos.gamecenter.a.a.a:
+    com.letv.tvos.gamecenter.data.spfs.SharedPrefHelper sharedPrefHelper -> a
+    android.content.SharedPreferences sharedPreferences -> b
+    com.letv.tvos.gamecenter.data.spfs.SharedPrefHelper getInstance(android.content.Context) -> a
+    void setDataCache(java.lang.String) -> a
+    java.lang.String getDataCache() -> a
+com.letv.tvos.gamecenter.launcher.GameCenterActivator -> com.letv.tvos.gamecenter.launcher.GameCenterActivator:
+    android.content.Context mContext -> mContext
+    void start(letv.plugin.framework.base.WidgetContext) -> start
+    void start(letv.plugin.framework.base.WidgetContext,android.os.Bundle) -> start
+    void stop(letv.plugin.framework.base.WidgetContext) -> stop
+    void initContext(letv.plugin.framework.base.WidgetContext) -> initContext
+    android.content.Context getContext() -> getContext
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView -> com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView:
+    android.view.View gs_launcher_item_1 -> f
+    android.view.View gs_launcher_item_2 -> g
+    android.view.View gs_launcher_item_3 -> h
+    android.view.View gs_launcher_item_4 -> i
+    android.view.View gs_launcher_item_5 -> j
+    android.view.View gs_launcher_item_6 -> k
+    android.view.View gs_launcher_item_7 -> l
+    android.view.View gs_launcher_item_8 -> m
+    android.view.View gs_launcher_item_9 -> n
+    android.view.View gs_launcher_item_10 -> o
+    android.view.View gs_launcher_item_11 -> p
+    android.view.View gs_launcher_item_12 -> q
+    android.view.View gs_launcher_item_13 -> r
+    android.view.View gs_launcher_item_14 -> s
+    android.view.View gs_launcher_item_15 -> t
+    int defaultItemWidth -> u
+    int defaultItemHeight -> v
+    int itemSpacing -> w
+    int minScroolOffset -> x
+    int scroolTopBorderline -> y
+    int scroolbottomBorderline -> z
+    java.util.ArrayList itemTypeFuncationsViews -> a
+    java.util.ArrayList itemType1Views -> b
+    java.util.ArrayList itemType2Views -> c
+    android.view.View bannerView -> d
+    android.view.View rankView -> e
+    android.widget.Scroller mScroller -> A
+    boolean isScrolling -> B
+    java.util.ArrayList mChilds -> C
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView$OnBackPressedListener mOnBackPressedListener -> D
+    void setmOnBackPressedListener(com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView$OnBackPressedListener) -> a
+    void onFinishInflate() -> onFinishInflate
+    boolean requestFirstFocus(int) -> a
+    android.view.View findFocusInRow(int,int) -> a
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void smoothScrollTo(int,int,int) -> a
+    void computeScroll() -> computeScroll
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean findNextFocus(int) -> b
+    int access$000(com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView) -> a
+    int access$100(com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView,android.view.View) -> a
+    void access$200(com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView,int) -> a
+    int access$300(com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView) -> b
+    android.widget.Scroller access$400(com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView) -> c
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView$MChild -> com.letv.tvos.gamecenter.launcher.a:
+    int cloumn -> a
+    int row -> b
+    android.view.View mView -> c
+    int marginLeft -> d
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView this$0 -> e
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView$MFocusChangeListener -> com.letv.tvos.gamecenter.launcher.b:
+    android.animation.AnimatorSet animatorSet -> b
+    float scaleRate -> c
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView this$0 -> a
+    void onFocusChange(android.view.View,boolean) -> onFocusChange
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView$OnBackPressedListener -> com.letv.tvos.gamecenter.launcher.c:
+    void onBackPressed() -> onBackPressed
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment -> com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment:
+    int GAMECENT_LAUNCHER_RESOURCE -> GAMECENT_LAUNCHER_RESOURCE
+    java.lang.String TAG -> TAG
+    boolean needRefresh -> needRefresh
+    long lastUpdateTime -> lastUpdateTime
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherContentView gameCenterLauncherContentView -> gameCenterLauncherContentView
+    java.lang.String dateSingture -> dateSingture
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel mdateModel -> mdateModel
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel mDefaultDateModel -> mDefaultDateModel
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$NetWorkStateBroadcastReceiver mNetWorkStateBroadcastReceiver -> mNetWorkStateBroadcastReceiver
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$PackageInstallReceiver packageInstallReceiver -> packageInstallReceiver
+    java.util.HashMap notifyPackages -> notifyPackages
+    boolean onFocusRequested(int) -> onFocusRequested
+    void onFragmentSeletedPre(boolean) -> onFragmentSeletedPre
+    void loadCache() -> loadCache
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel createDateModel(java.util.List) -> createDateModel
+    void onFragmentShowChanged(boolean) -> onFragmentShowChanged
+    boolean onHomeKeyEventHandled() -> onHomeKeyEventHandled
+    android.view.View onInflaterContent(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onInflaterContent
+    void setHoverListener(android.view.View$OnHoverListener) -> setHoverListener
+    void featchDate() -> featchDate
+    void fillDateToView(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel) -> fillDateToView
+    void onClick(android.view.View) -> onClick
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onBackPressed() -> onBackPressed
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel access$002(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment,com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel) -> access$002
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel access$100(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment,java.util.List) -> access$100
+    java.lang.String access$200(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment) -> access$200
+    java.lang.String access$202(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment,java.lang.String) -> access$202
+    boolean access$302(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment,boolean) -> access$302
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel access$402(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment,com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel) -> access$402
+    void access$500(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment,com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel) -> access$500
+    void access$600(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment) -> access$600
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel access$400(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment) -> access$400
+    java.util.HashMap access$700(com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment) -> access$700
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$1 -> com.letv.tvos.gamecenter.launcher.d:
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment this$0 -> a
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel doInBackground$53a31a26() -> a
+    java.util.ArrayList parseDate(java.lang.String) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$1$1 -> com.letv.tvos.gamecenter.launcher.e:
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$1 this$1 -> a
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$2 -> com.letv.tvos.gamecenter.launcher.f:
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment this$0 -> a
+    void onNetworkCompleteSuccess(com.letv.tvos.gamecenter.application.network.IRequest,java.lang.String) -> onNetworkCompleteSuccess
+    void onNetworkCompleteFailed(com.letv.tvos.gamecenter.application.network.IRequest,java.lang.String) -> onNetworkCompleteFailed
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$DateModel -> com.letv.tvos.gamecenter.launcher.g:
+    com.letv.tvos.gamecenter.model.DesktopItem banner -> a
+    com.letv.tvos.gamecenter.model.DesktopItem rank -> b
+    java.util.ArrayList itemsType1 -> c
+    java.util.ArrayList itemsType2 -> d
+    java.util.ArrayList itemsFunctions -> e
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$NetWorkStateBroadcastReceiver -> com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$NetWorkStateBroadcastReceiver:
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$PackageInstallReceiver -> com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment$PackageInstallReceiver:
+    com.letv.tvos.gamecenter.launcher.GameCenterLauncherFragment this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.letv.tvos.gamecenter.launcher.GameCenterLauncherPlugin -> com.letv.tvos.gamecenter.launcher.GameCenterLauncherPlugin:
+    android.support.v4.app.Fragment createFragment() -> createFragment
+com.letv.tvos.gamecenter.launcher1.DeskTopAdapter -> com.letv.tvos.gamecenter.launcher1.a:
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel$DeskTopRowItem myGames -> a
+    java.util.List items -> b
+    long lastClickEventTime -> c
+    int getCount() -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> a
+    void fillItems(int,com.letv.tvos.gamecenter.widget.IgnoreChildPadingLinerLayout,com.letv.tvos.gamecenter.model.DeskTopResponseModel$DeskTopRowItem) -> a
+    int getItemtHeight(android.content.res.Resources,int) -> a
+    void onClick(android.view.View) -> onClick
+com.letv.tvos.gamecenter.launcher1.DeskTopAdapter$ItemViewHolder -> com.letv.tvos.gamecenter.launcher1.b:
+    android.widget.TextView name -> a
+    com.letv.tvos.gamecenter.widget.AsyncImageView bg -> b
+    android.widget.ImageView icon -> c
+    com.letv.tvos.gamecenter.widget.AsyncImageView appIcon -> d
+    com.letv.tvos.gamecenter.launcher1.DeskTopAdapter this$0 -> e
+com.letv.tvos.gamecenter.launcher1.DeskTopAdapter$ViewHolder -> com.letv.tvos.gamecenter.launcher1.c:
+    android.widget.TextView name -> a
+    com.letv.tvos.gamecenter.widget.IgnoreChildPadingLinerLayout items -> b
+    android.widget.TextView msg -> c
+    com.letv.tvos.gamecenter.launcher1.DeskTopAdapter this$0 -> d
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 -> com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1:
+    boolean isInit -> isInit
+    java.util.concurrent.ExecutorService executorService -> executorService
+    java.lang.String TAG -> TAG
+    com.letv.tvos.gamecenter.widget.GameCenterLauncherListView gclc_gamecenter_launcher_main_container -> gclc_gamecenter_launcher_main_container
+    java.lang.String dateSingture -> dateSingture
+    boolean needRefresh -> needRefresh
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel$DeskTopRowItem mGames -> mGames
+    java.util.List dataList -> dataList
+    java.util.List focusList -> focusList
+    long lastUpdateTime -> lastUpdateTime
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$PackageInstallReceiver packageInstallReceiver -> packageInstallReceiver
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$NetWorkStateBroadcastReceiver mNetWorkStateBroadcastReceiver -> mNetWorkStateBroadcastReceiver
+    com.letv.tvos.gamecenter.launcher1.DeskTopAdapter mAdapter -> mAdapter
+    com.letv.tvos.gamecenter.widget.FadeInSwitchImageView fisiv_gamecenter_launcher_background -> fisiv_gamecenter_launcher_background
+    android.view.View header -> header
+    android.widget.TextView launcher_item_header_title -> launcher_item_header_title
+    com.letv.tvos.gamecenter.widget.EllipsizeText launcher_item_header_msg -> launcher_item_header_msg
+    android.view.View launcher_item_header_text_container -> launcher_item_header_text_container
+    com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout launcher_item_header_banners -> launcher_item_header_banners
+    com.letv.tvos.gamecenter.launcher1.HandlerLooper mHandlerLooper -> mHandlerLooper
+    long loadTime -> loadTime
+    boolean isReportLoadTime -> isReportLoadTime
+    boolean PageScrolling -> PageScrolling
+    int savedTopItemIndex -> savedTopItemIndex
+    int savedLastFocusItemIndex -> savedLastFocusItemIndex
+    long lastLoadDataTime -> lastLoadDataTime
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel mDataModel -> mDataModel
+    int savedRequestFocused -> savedRequestFocused
+    com.letv.tvos.gamecenter.launcher1.MyGameObserver myGameObserver -> myGameObserver
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$MyBannerLooper bannerLooper -> bannerLooper
+    com.letv.tvos.gamecenter.launcher1.HandlerLooper$LoopInterface myDataLoopInterface -> myDataLoopInterface
+    boolean onOperated -> onOperated
+    long lastClickEventTime -> lastClickEventTime
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onFocusRequested(int) -> onFocusRequested
+    android.view.View onInflaterContent(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onInflaterContent
+    void onFragmentSeletedPre(boolean) -> onFragmentSeletedPre
+    void onFragmentShowChanged(boolean) -> onFragmentShowChanged
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void fillView(com.letv.tvos.gamecenter.model.DeskTopResponseModel) -> fillView
+    void fillHeader(java.util.List) -> fillHeader
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$ViewHolder createHeaderViewHolder(android.view.View) -> createHeaderViewHolder
+    void reportLoadTime() -> reportLoadTime
+    void loadCacheAndCreateView(java.lang.String) -> loadCacheAndCreateView
+    boolean onHomeKeyEventHandled() -> onHomeKeyEventHandled
+    void setHoverListener(android.view.View$OnHoverListener) -> setHoverListener
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel parseDate(java.lang.String) -> parseDate
+    void initHeader(android.view.View) -> initHeader
+    void onScrollStart(android.view.View,long) -> onScrollStart
+    void onScrolling(android.view.View,long) -> onScrolling
+    void onScrollEnd(android.view.View,long) -> onScrollEnd
+    void onBackPressed() -> onBackPressed
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onDestroy() -> onDestroy
+    void createViews() -> createViews
+    void checkStateAndStartBannerLoop() -> checkStateAndStartBannerLoop
+    void stopBannerLoop() -> stopBannerLoop
+    void onClick(android.view.View) -> onClick
+    void featchDate() -> featchDate
+    void onCrush() -> onCrush
+    void access$100(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$100
+    com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout access$300(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$300
+    void access$400(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$400
+    com.letv.tvos.gamecenter.widget.GameCenterLauncherListView access$500(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$500
+    java.lang.String access$600() -> access$600
+    java.lang.String access$700(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$700
+    java.lang.String access$702(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1,java.lang.String) -> access$702
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel access$800(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1,java.lang.String) -> access$800
+    boolean access$902(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1,boolean) -> access$902
+    android.view.View access$1000(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$1000
+    void access$1100(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1,android.view.View) -> access$1100
+    com.letv.tvos.gamecenter.launcher1.DeskTopAdapter access$1200(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$1200
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel access$1302(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1,com.letv.tvos.gamecenter.model.DeskTopResponseModel) -> access$1302
+    boolean access$1400(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$1400
+    void access$1500(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1,com.letv.tvos.gamecenter.model.DeskTopResponseModel) -> access$1500
+    int access$1600(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$1600
+    int access$1700(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$1700
+    int access$1800(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$1800
+    int access$1802(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1,int) -> access$1802
+    boolean access$1900(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$1900
+    void access$2000(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$2000
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel access$1300(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$1300
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel$DeskTopRowItem access$2300(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$2300
+    boolean access$2402(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1,boolean) -> access$2402
+    android.widget.TextView access$2500(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$2500
+    com.letv.tvos.gamecenter.widget.EllipsizeText access$2600(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$2600
+    android.view.View access$2700(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$2700
+    com.letv.tvos.gamecenter.widget.FadeInSwitchImageView access$2800(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$2800
+    boolean access$2400(com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1) -> access$2400
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$1 -> com.letv.tvos.gamecenter.launcher1.d:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> a
+    void onLoop() -> a
+    long getLoopTime() -> b
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$2 -> com.letv.tvos.gamecenter.launcher1.e:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> a
+    void onFocusChange(android.view.View,boolean) -> onFocusChange
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$3 -> com.letv.tvos.gamecenter.launcher1.f:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> a
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel doInBackground(java.lang.String[]) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$3$1 -> com.letv.tvos.gamecenter.launcher1.g:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$3 this$1 -> a
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$4 -> com.letv.tvos.gamecenter.launcher1.h:
+    long val$startTime -> a
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> b
+    void onNetworkCompleteSuccess(com.letv.tvos.gamecenter.application.network.IRequest,java.lang.String) -> onNetworkCompleteSuccess
+    void onNetworkCompleteFailed(com.letv.tvos.gamecenter.application.network.IRequest,java.lang.String) -> onNetworkCompleteFailed
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$MyBannerLooper -> com.letv.tvos.gamecenter.launcher1.i:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> a
+    void onLoop() -> a
+    long getLoopTime() -> b
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$MyBannerOperatedListener -> com.letv.tvos.gamecenter.launcher1.j:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> a
+    void onOperated() -> a
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$MyBannerSelectedChangedListener -> com.letv.tvos.gamecenter.launcher1.k:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> a
+    void onSelectChanged(android.view.View,boolean) -> a
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$MyGamesDataSetChangeListener -> com.letv.tvos.gamecenter.launcher1.l:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> a
+    void onDataChagned(java.util.List) -> a
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$NetWorkStateBroadcastReceiver -> com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$NetWorkStateBroadcastReceiver:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$PackageInstallReceiver -> com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$PackageInstallReceiver:
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1$ViewHolder -> com.letv.tvos.gamecenter.launcher1.m:
+    android.view.View shadow -> a
+    com.letv.tvos.gamecenter.widget.AsyncImageView pic -> b
+    com.letv.tvos.gamecenter.launcher1.GameCenterLauncherFragment1 this$0 -> c
+com.letv.tvos.gamecenter.launcher1.HandlerLooper -> com.letv.tvos.gamecenter.launcher1.n:
+    java.util.HashMap loops -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    void startLoop(com.letv.tvos.gamecenter.launcher1.HandlerLooper$LoopInterface) -> a
+    void stopLoop(com.letv.tvos.gamecenter.launcher1.HandlerLooper$LoopInterface) -> b
+com.letv.tvos.gamecenter.launcher1.HandlerLooper$LoopInterface -> com.letv.tvos.gamecenter.launcher1.o:
+    void onLoop() -> a
+    long getLoopTime() -> b
+com.letv.tvos.gamecenter.launcher1.MFocusChangeListener -> com.letv.tvos.gamecenter.launcher1.p:
+    android.animation.AnimatorSet animatorSet -> a
+    float scaleRate -> b
+    void onFocusChange(android.view.View,boolean) -> onFocusChange
+com.letv.tvos.gamecenter.launcher1.MyGameObserver -> com.letv.tvos.gamecenter.launcher1.q:
+    android.content.Context context -> a
+    java.util.concurrent.ExecutorService executorService -> b
+    com.letv.tvos.gamecenter.launcher1.MyGameObserver$MyGameCursorloaderInterface mGameCursorloaderInterface -> c
+    void onChange(boolean) -> onChange
+    android.content.Context access$100(com.letv.tvos.gamecenter.launcher1.MyGameObserver) -> a
+    com.letv.tvos.gamecenter.launcher1.MyGameObserver$MyGameCursorloaderInterface access$200(com.letv.tvos.gamecenter.launcher1.MyGameObserver) -> b
+com.letv.tvos.gamecenter.launcher1.MyGameObserver$MyGameCursorloaderInterface -> com.letv.tvos.gamecenter.launcher1.r:
+    void onDataChagned(java.util.List) -> a
+com.letv.tvos.gamecenter.launcher1.MyGameObserver$MyQueryTask -> com.letv.tvos.gamecenter.launcher1.s:
+    com.letv.tvos.gamecenter.launcher1.MyGameObserver this$0 -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.letv.tvos.gamecenter.launcher1.UriConstants -> com.letv.tvos.gamecenter.launcher1.t:
+    android.net.Uri CONTENT_URI -> a
+com.letv.tvos.gamecenter.model.BaseModel -> com.letv.tvos.gamecenter.model.BaseModel:
+    long createTime -> createTime
+    long getCreateTime() -> getCreateTime
+    void setCreateTime(long) -> setCreateTime
+com.letv.tvos.gamecenter.model.DeskTopResponseModel -> com.letv.tvos.gamecenter.model.DeskTopResponseModel:
+    java.util.List focusPics -> focusPics
+    com.letv.tvos.gamecenter.model.DeskTopResponseModel$DeskTopRowItem myGame -> myGame
+    java.util.List operateItems -> operateItems
+com.letv.tvos.gamecenter.model.DeskTopResponseModel$DeskTopItem -> com.letv.tvos.gamecenter.model.DeskTopResponseModel$DeskTopItem:
+    java.lang.String desktopPic -> desktopPic
+    java.lang.String icon -> icon
+    int id -> id
+    java.lang.String name -> name
+    java.lang.String packageName -> packageName
+    java.lang.String subType -> subType
+    java.lang.String type -> type
+    java.lang.String accessoriesZoneCid -> accessoriesZoneCid
+    java.lang.String zoneName -> zoneName
+    java.lang.String itemType -> itemType
+    java.lang.String accessoriesId -> accessoriesId
+    java.lang.String accessoriesZoneBackgroundUrl -> accessoriesZoneBackgroundUrl
+    java.util.List items -> items
+com.letv.tvos.gamecenter.model.DeskTopResponseModel$DeskTopRowItem -> com.letv.tvos.gamecenter.model.DeskTopResponseModel$DeskTopRowItem:
+    int cellType -> cellType
+    int orderType -> orderType
+    java.lang.String type -> type
+    java.lang.String name -> name
+    java.lang.String title -> title
+    java.lang.String background -> background
+    java.lang.String desktopPic -> desktopPic
+    java.lang.String parameter -> parameter
+    java.lang.String itemType -> itemType
+    java.lang.String picture -> picture
+    java.util.List items -> items
+com.letv.tvos.gamecenter.model.DesktopItem -> com.letv.tvos.gamecenter.model.DesktopItem:
+    int cellType -> cellType
+    int orderValue -> orderValue
+    java.lang.String type -> type
+    java.lang.String name -> name
+    java.lang.String title -> title
+    java.lang.String picture -> picture
+    java.lang.String parameter -> parameter
+    int compareTo(java.lang.Object) -> compareTo
+com.letv.tvos.gamecenter.util.AnimationUtil -> com.letv.tvos.gamecenter.b.a:
+    android.animation.AnimatorSet startScaleToBigAnimation(android.view.View,float,android.animation.Animator$AnimatorListener) -> a
+    android.animation.AnimatorSet startScaleToSmallAnimation$40858cce(android.view.View,float) -> a
+com.letv.tvos.gamecenter.util.AppUtil -> com.letv.tvos.gamecenter.b.b:
+    int getVersionCode(android.content.Context) -> a
+    android.content.pm.PackageInfo getPackageInfo(android.content.Context,java.lang.String) -> a
+com.letv.tvos.gamecenter.util.FileUtil -> com.letv.tvos.gamecenter.b.c:
+    void copyFile(java.io.InputStream,java.io.File) -> a
+com.letv.tvos.gamecenter.util.InstalledApkRecordUtil -> com.letv.tvos.gamecenter.b.d:
+    com.letv.tvos.gamecenter.util.InstalledApkRecordUtil instance -> b
+    java.util.ArrayList installedPackages -> a
+    com.letv.tvos.gamecenter.util.InstalledApkRecordUtil getInstance() -> a
+com.letv.tvos.gamecenter.util.Logger -> com.letv.tvos.gamecenter.b.e:
+    int LEVLE -> a
+    void d(java.lang.String,java.lang.String) -> a
+    void i(java.lang.String,java.lang.String) -> b
+    void e(java.lang.String,java.lang.String) -> c
+    void printException(java.lang.Exception) -> a
+com.letv.tvos.gamecenter.util.MD5Utils -> com.letv.tvos.gamecenter.b.f:
+    java.lang.String MD5(java.lang.String) -> a
+com.letv.tvos.gamecenter.util.StatisticsUtil -> com.letv.tvos.gamecenter.b.g:
+    void onEvent(android.content.Context,java.lang.String,java.util.Map) -> a
+com.letv.tvos.gamecenter.widget.AsyncImageView -> com.letv.tvos.gamecenter.widget.AsyncImageView:
+    java.lang.String mImageUrl -> a
+    void setRoundingParams(float) -> a
+    boolean setUrl(java.lang.String) -> a
+    boolean setUrl(java.lang.String,android.graphics.drawable.Drawable) -> a
+    boolean setUrl(java.lang.String,int,int,android.graphics.drawable.Drawable,com.facebook.drawee.controller.BaseControllerListener) -> a
+com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout -> com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout:
+    android.view.View currentSelectedView -> b
+    com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout$SelectChangedListener mSelectChangedListener -> c
+    com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout$UseroperationInterface mUseroperationInterface -> d
+    void setSelectChangedListener(com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout$SelectChangedListener) -> a
+    void setmUseroperationInterface(com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout$UseroperationInterface) -> a
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    android.view.View selectNext() -> a
+    void setSelect(android.view.View) -> a
+com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout$SelectChangedListener -> com.letv.tvos.gamecenter.widget.a:
+    void onSelectChanged(android.view.View,boolean) -> a
+com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout$UseroperationInterface -> com.letv.tvos.gamecenter.widget.b:
+    void onOperated() -> a
+com.letv.tvos.gamecenter.widget.CListView -> com.letv.tvos.gamecenter.widget.CListView:
+    java.lang.String VIEW_LOG_TAG -> a
+    com.letv.tvos.gamecenter.widget.CListView$Adapter mAdapter -> e
+    int currentTopItem -> b
+    int mTop -> f
+    int mBottom -> g
+    java.util.ArrayList views -> h
+    java.util.ArrayList recyledViews -> i
+    int mWidth -> j
+    int mHeight -> k
+    boolean isScrolling -> l
+    android.widget.Scroller mScroller -> m
+    com.letv.tvos.gamecenter.widget.CListView$OnScrollListener mOnScrollListener -> n
+    android.database.DataSetObserver mDataSetObserver -> o
+    java.util.ArrayList headerViews -> c
+    int currentFocusItemIndex -> d
+    void setOnScrollListener(com.letv.tvos.gamecenter.widget.CListView$OnScrollListener) -> a
+    void addCacheViews(android.view.View,int) -> a
+    void setAdapter(com.letv.tvos.gamecenter.widget.CListView$Adapter) -> a
+    void addHeader(android.view.View) -> a
+    void onMeasure(int,int) -> onMeasure
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void fillViewAll() -> e
+    void recycleViewNotVisable() -> f
+    int getViewItemLocation(int) -> d
+    void measureChilItem(com.letv.tvos.gamecenter.widget.CListView$ViewItem) -> a
+    void removeViewFromLayout() -> g
+    com.letv.tvos.gamecenter.widget.CListView$ViewItem findViewItemWithSameType(java.util.List,int,int) -> a
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    com.letv.tvos.gamecenter.widget.CListView$ViewItem finViewItem(android.view.View) -> b
+    boolean isChildInViewGroup(android.view.ViewGroup,android.view.View) -> a
+    boolean dispatchTouchEvent(android.view.MotionEvent) -> dispatchTouchEvent
+    void smoothScrollTo(int,int,int) -> a
+    void computeScroll() -> computeScroll
+    void scrollTo(int,int) -> scrollTo
+    com.letv.tvos.gamecenter.widget.CListView$ViewItem getTopFullVisableItem() -> a
+    int getTopFullVisableItemIndex() -> b
+    void saveCurrentFocusItemIndex(int) -> a
+    int getLastFocusItemIndex() -> c
+    void setCurrentTopItem(int) -> b
+    com.letv.tvos.gamecenter.widget.CListView$ViewItem getItemAt(int) -> c
+    int getItemCount() -> d
+    void access$000(com.letv.tvos.gamecenter.widget.CListView) -> a
+    int access$100(com.letv.tvos.gamecenter.widget.CListView) -> b
+com.letv.tvos.gamecenter.widget.CListView$1 -> com.letv.tvos.gamecenter.widget.c:
+    com.letv.tvos.gamecenter.widget.CListView this$0 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+com.letv.tvos.gamecenter.widget.CListView$Adapter -> com.letv.tvos.gamecenter.widget.d:
+    android.database.DataSetObservable mDataSetObservable -> a
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+    void notifyDataSetChanged() -> b
+    void notifyDataSetInvalidated() -> c
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> a
+    int getCount() -> a
+    int getItemType(int) -> a
+    int getItemtHeight(android.content.res.Resources,int) -> a
+com.letv.tvos.gamecenter.widget.CListView$HeaderViewAdapter -> com.letv.tvos.gamecenter.widget.e:
+    com.letv.tvos.gamecenter.widget.CListView$Adapter mAdapter -> b
+    android.database.DataSetObserver mDataSetObserver -> c
+    com.letv.tvos.gamecenter.widget.CListView this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> a
+    int getCount() -> a
+    int getItemType(int) -> a
+    int getItemtHeight(android.content.res.Resources,int) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+com.letv.tvos.gamecenter.widget.CListView$HeaderViewAdapter$1 -> com.letv.tvos.gamecenter.widget.f:
+    com.letv.tvos.gamecenter.widget.CListView$HeaderViewAdapter this$1 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+com.letv.tvos.gamecenter.widget.CListView$OnScrollListener -> com.letv.tvos.gamecenter.widget.g:
+    void onScrollStart(android.view.View,long) -> onScrollStart
+    void onScrolling(android.view.View,long) -> onScrolling
+    void onScrollEnd(android.view.View,long) -> onScrollEnd
+com.letv.tvos.gamecenter.widget.CListView$ViewItem -> com.letv.tvos.gamecenter.widget.h:
+    android.view.View view -> a
+    int type -> b
+    int index -> c
+    int location -> d
+    boolean isAttached -> e
+    com.letv.tvos.gamecenter.widget.CListView this$0 -> f
+    int getItemBottom() -> a
+    int getItemTop() -> b
+    int compareTo(java.lang.Object) -> compareTo
+com.letv.tvos.gamecenter.widget.EllipsizeText -> com.letv.tvos.gamecenter.widget.EllipsizeText:
+    java.util.List ellipsizeListeners -> a
+    boolean isEllipsized -> b
+    boolean isStale -> c
+    boolean programmaticChange -> d
+    java.lang.String fullText -> e
+    int maxLines -> f
+    float lineSpacingMultiplier -> g
+    float lineAdditionalVerticalPadding -> h
+    void setMaxLines(int) -> setMaxLines
+    int getMaxLines() -> getMaxLines
+    void setLineSpacing(float,float) -> setLineSpacing
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void onDraw(android.graphics.Canvas) -> onDraw
+    android.text.Layout createWorkingLayout(java.lang.String) -> a
+    void setEllipsize(android.text.TextUtils$TruncateAt) -> setEllipsize
+com.letv.tvos.gamecenter.widget.FadeInSwitchImageView -> com.letv.tvos.gamecenter.widget.FadeInSwitchImageView:
+    com.facebook.drawee.view.DraweeHolder mDraweeHolderCurrent -> a
+    com.facebook.drawee.view.DraweeHolder mDraweeHolderNext -> b
+    com.letv.tvos.gamecenter.widget.FadeInSwitchImageView$CustomViewBaseControllerListener mControllerListener -> c
+    com.letv.tvos.gamecenter.widget.TransitionDrawable mDrawable -> d
+    com.letv.tvos.gamecenter.widget.FadeInSwitchImageView$CustomViewLoadListener loadListener -> e
+    boolean animing -> f
+    java.lang.String savedUrl -> g
+    void init() -> c
+    void setUrl(java.lang.String) -> a
+    void startLoad(java.lang.String) -> b
+    void draw(android.graphics.Canvas) -> draw
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void onStartTemporaryDetach() -> onStartTemporaryDetach
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onFinishTemporaryDetach() -> onFinishTemporaryDetach
+    boolean verifyDrawable(android.graphics.drawable.Drawable) -> verifyDrawable
+    void showNext() -> d
+    void onStart() -> a
+    void onEnd() -> b
+    void access$100(com.letv.tvos.gamecenter.widget.FadeInSwitchImageView) -> a
+    com.letv.tvos.gamecenter.widget.FadeInSwitchImageView$CustomViewLoadListener access$200(com.letv.tvos.gamecenter.widget.FadeInSwitchImageView) -> b
+com.letv.tvos.gamecenter.widget.FadeInSwitchImageView$CustomViewBaseControllerListener -> com.letv.tvos.gamecenter.widget.i:
+    com.letv.tvos.gamecenter.widget.FadeInSwitchImageView this$0 -> a
+    void onFailure(java.lang.String,java.lang.Throwable) -> onFailure
+    void onIntermediateImageSet(java.lang.String,java.lang.Object) -> onIntermediateImageSet
+    void onFinalImageSet(java.lang.String,java.lang.Object,android.graphics.drawable.Animatable) -> onFinalImageSet
+com.letv.tvos.gamecenter.widget.FadeInSwitchImageView$CustomViewLoadListener -> com.letv.tvos.gamecenter.widget.j:
+com.letv.tvos.gamecenter.widget.GameCenterLauncherListView -> com.letv.tvos.gamecenter.widget.GameCenterLauncherListView:
+    android.graphics.drawable.Drawable backgroundDrawable -> e
+    com.letv.tvos.gamecenter.widget.GameCenterLauncherListView$OnBackPressedListener mOnBackPressedListener -> f
+    int headerHeight -> g
+    void setOnBackPressedListener(com.letv.tvos.gamecenter.widget.GameCenterLauncherListView$OnBackPressedListener) -> a
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    void onFinishInflate() -> onFinishInflate
+    void onDraw(android.graphics.Canvas) -> onDraw
+    boolean requestFocus(int,int) -> a
+    android.view.View focusSearch(android.view.View,int) -> focusSearch
+com.letv.tvos.gamecenter.widget.GameCenterLauncherListView$OnBackPressedListener -> com.letv.tvos.gamecenter.widget.k:
+    void onBackPressed() -> onBackPressed
+com.letv.tvos.gamecenter.widget.IgnoreChildPadingLinerLayout -> com.letv.tvos.gamecenter.widget.IgnoreChildPadingLinerLayout:
+    java.util.ArrayList childs -> a
+    int itemSpacing -> b
+    int orientation -> c
+    int childIndexOf(android.view.View) -> b
+    void onMeasure(int,int) -> onMeasure
+    void setItemSpacing(int) -> a
+    android.view.View getChild(int) -> b
+    void onFinishInflate() -> onFinishInflate
+    void removeViewsInLayout(int,int) -> removeViewsInLayout
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    android.view.View focusSearchLast() -> b
+    android.view.View focusSearch(android.view.View,int) -> focusSearch
+com.letv.tvos.gamecenter.widget.TransitionDrawable -> com.letv.tvos.gamecenter.widget.l:
+    int mTransitionState -> a
+    int mAlpha -> b
+    android.graphics.drawable.Drawable toBeFadeOut -> c
+    android.graphics.drawable.Drawable mDrawable -> d
+    boolean isDone -> e
+    long mStartTimeMillis -> f
+    int mFrom -> g
+    int mTo -> h
+    int mDuration -> i
+    int mOriginalDuration -> j
+    com.letv.tvos.gamecenter.widget.TransitionDrawable$AnimListener mAnimListener -> k
+    void setAnimListener(com.letv.tvos.gamecenter.widget.TransitionDrawable$AnimListener) -> a
+    void setmDrawable(android.graphics.drawable.Drawable) -> a
+    void draw(android.graphics.Canvas) -> draw
+    void setAlpha(int) -> setAlpha
+    void setColorFilter(android.graphics.ColorFilter) -> setColorFilter
+    int getOpacity() -> getOpacity
+    void startTransition(int) -> a
+    void updateAndInvalidate() -> a
+    void setBounds(int,int,int,int) -> setBounds
+    void setBounds(android.graphics.Rect) -> setBounds
+    boolean onLevelChange(int) -> onLevelChange
+com.letv.tvos.gamecenter.widget.TransitionDrawable$AnimListener -> com.letv.tvos.gamecenter.widget.m:
+    void onStart() -> a
+    void onEnd() -> b

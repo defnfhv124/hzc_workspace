@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="gs_211_3">211.3dp</dimen>
+    <dimen name="gs_132">132dp</dimen>
+    <dimen name="gs_152">152dp</dimen>
+    <dimen name="gs_3">3dp</dimen>
+    <dimen name="gs_6_6">6.6dp</dimen>
+    <dimen name="gs_49">49dp</dimen>
+    <dimen name="gs_44">44dp</dimen>
+    <dimen name="gs_440">440dp</dimen>
+    <dimen name="gs_18">18dp</dimen>
+    <dimen name="gs_28">28dp</dimen>
+    <dimen name="gs_11">11dp</dimen>
+    <dimen name="gs_88">88dp</dimen>
+    <dimen name="gs_8">8dp</dimen>
+    <dimen name="gs_32">32dp</dimen>
+    <dimen name="gs_38">38dp</dimen>
+    <dimen name="gs_307">307dp</dimen>
+    <dimen name="gs_48">48dp</dimen>
+    <dimen name="gs_40">40dp</dimen>
+    <dimen name="gs_60">60dp</dimen>
+    <dimen name="gs_68">68dp</dimen>
+    <dimen name="gs_66">66dp</dimen>
+    <dimen name="gs_27">27dp</dimen>
+    <dimen name="gs_78">78dp</dimen>
+    <dimen name="gs_30">30dp</dimen>
+    <dimen name="gs_10">10dp</dimen>
+    <dimen name="gs_66_6">66.6dp</dimen>
+    <dimen name="gs_16">16dp</dimen>
+    <dimen name="gs_20">20dp</dimen>
+    <dimen name="gs_223">223dp</dimen>
+    <dimen name="gs_22">22dp</dimen>
+    <dimen name="gs_24">24dp</dimen>
+    <dimen name="gs_102">102dp</dimen>
+    <dimen name="gs_118">118dp</dimen>
+    <dimen name="gs_106">106dp</dimen>
+    <dimen name="gs_156">156dp</dimen>
+    <dimen name="gs_157">157dp</dimen>
+    <dimen name="gs_120">120dp</dimen>
+    <dimen name="gs_186">186dp</dimen>
+    <dimen name="gs_126_6">126.6dp</dimen>
+    <dimen name="gs_26">26dp</dimen>
+    <dimen name="gs_100">100dp</dimen>
+    <dimen name="gs_74">74dp</dimen>
+    <dimen name="gs_130">130dp</dimen>
+    <dimen name="gs_320">320dp</dimen>
+    <dimen name="gs_154_6">154.6dp</dimen>
+    <dimen name="gs_593_3">593.3dp</dimen>
+    <dimen name="gs_226">226dp</dimen>
+    <dimen name="gs_214">214dp</dimen>
+    <dimen name="gs_127">127dp</dimen>
+    <dimen name="gs_284">284dp</dimen>
+    <dimen name="gs_328">328dp</dimen>
+    <dimen name="gf_26">26sp</dimen>
+    <dimen name="gf_24">24sp</dimen>
+    <dimen name="gf_44">44sp</dimen>
+    <dimen name="gf_18_6">18.6sp</dimen>
+    <dimen name="gs_13">13dp</dimen>
+    <dimen name="gf_20">20dp</dimen>
+    <dimen name="gs_666">666dp</dimen>
+    <dimen name="gs_438.6">438.6dp</dimen>
+    <dimen name="gs_148">148dp</dimen>
+
+</resources>

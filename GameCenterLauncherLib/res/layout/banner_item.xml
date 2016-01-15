@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gamecenter_launcher_item_focus_bg"
+    android:clipChildren="false"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <com.letv.tvos.gamecenter.widget.AsyncImageView
+        android:id="@+id/v_banner_pic"
+        android:layout_width="@dimen/gs_118"
+        android:layout_height="@dimen/gs_66" />
+
+    <View
+        android:id="@+id/v_banner_shadow"
+        android:layout_width="@dimen/gs_118"
+        android:layout_height="@dimen/gs_66"
+        android:background="@drawable/banner_shadow" />
+
+</FrameLayout>

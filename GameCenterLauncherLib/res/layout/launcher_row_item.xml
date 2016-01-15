@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/launcher_row_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/launcher_row_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gs_30"
+        android:layout_marginLeft="@dimen/gs_78"
+        android:includeFontPadding="false"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/gf_26" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gs_156"
+        android:layout_marginLeft="@dimen/gs_78"
+        android:clipChildren="false" >
+
+        <com.letv.tvos.gamecenter.widget.IgnoreChildPadingLinerLayout
+            android:id="@+id/launcher_row_item_items"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gs_126_6"
+            android:layout_marginBottom="@dimen/gs_18"
+            android:layout_marginTop="@dimen/gs_11"
+            android:clipChildren="false" >
+            <include layout="@layout/launcher_item"/>
+            <include layout="@layout/launcher_item"/>
+            <include layout="@layout/launcher_item"/>
+            <include layout="@layout/launcher_item"/>
+            <include layout="@layout/launcher_item_small"/>
+        </com.letv.tvos.gamecenter.widget.IgnoreChildPadingLinerLayout>
+
+        <TextView
+            android:id="@+id/launcher_row_item_no_data_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gs_214"
+            android:layout_marginTop="@dimen/gs_11"
+            android:includeFontPadding="false"
+            android:textColor="#e5ffffff"
+            android:textSize="@dimen/gf_26" />
+    </FrameLayout>
+
+</LinearLayout>

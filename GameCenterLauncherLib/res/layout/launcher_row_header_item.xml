@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/launcher_item_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gs_307"
+        android:clipChildren="false" >
+
+        <LinearLayout
+            android:id="@+id/launcher_item_header_text_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gs_38"
+            android:layout_marginTop="@dimen/gs_48"
+            android:background="@drawable/header_text_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/gs_40" >
+
+            <TextView
+                android:id="@+id/launcher_item_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="14"
+                android:textColor="#efffff"
+                android:textSize="@dimen/gs_44" />
+
+            <com.letv.tvos.gamecenter.widget.EllipsizeText
+                android:id="@+id/launcher_item_header_msg"
+                android:layout_width="@dimen/gs_440"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gs_6_6"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/gs_6_6"
+                android:maxLines="2"
+                android:minLines="2"
+                android:textColor="#efffff"
+                android:textSize="@dimen/gf_24" />
+        </LinearLayout>
+
+        <com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout
+            android:id="@+id/launcher_item_header_banners"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gs_66"
+            android:layout_marginTop="@dimen/gs_223"
+            android:layout_marginBottom="@dimen/gs_20"
+            android:layout_marginLeft="@dimen/gs_78"
+            android:clipChildren="false" >
+            <include layout="@layout/banner_item"/>
+            <include layout="@layout/banner_item"/>
+            <include layout="@layout/banner_item"/>
+            <include layout="@layout/banner_item"/>
+            <include layout="@layout/banner_item"/>
+            <include layout="@layout/banner_item"/>
+            <include layout="@layout/banner_item"/>
+            <include layout="@layout/banner_item"/>
+            <include layout="@layout/banner_item"/>
+        </com.letv.tvos.gamecenter.widget.BannerIgnoreChildPadingLinerLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -19,4 +19,6 @@ public class GameCenterAction{
 	public static final String FUNCATION_TYPE_SBJSET = "SBJSET";
 	public static final String FUNCATION_TYPE_ACTIVITY = "ACTIVITY";
 	public static final String FUNCATION_TYPE_APP = "APP";
+
+	public static final String FUNCATION_TYPE_TEST = "TEST";
 }

@@ -2,6 +2,7 @@ package com.letv.tvos.gamecenter;
 
 /**
  * @author linan1 2013年10月8日 上午11:31:10
+ * git测试
  */
 public class AppConfig {
 	/*
